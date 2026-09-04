@@ -4,6 +4,6 @@ namespace Assignment3.ConsoleApp.Customers.Services
 {
     public interface ICustomerService
     {
-        void AddCustomer(Customer customer);
+        void AddCustomer(string name, string email);
     }
 }
