@@ -6,7 +6,7 @@ internal class SupplierService : ISupplierService
 {
     private readonly List<Supplier> _supplierList = [];
 
-    public Supplier AddSupplier(Guid id, string supplierName, string supplierEmail, string? supplierPhoneNumer)
+    public Supplier AddSupplier(string supplierName, string supplierEmail, string? supplierPhoneNumer)
     {
         Supplier supplier = CreateSupplier(supplierName, supplierEmail, supplierPhoneNumer);
 

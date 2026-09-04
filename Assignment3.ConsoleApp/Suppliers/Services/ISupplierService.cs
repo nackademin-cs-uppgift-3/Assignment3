@@ -4,6 +4,6 @@ namespace Assignment3.ConsoleApp.Suppliers.Services;
 
 internal interface ISupplierService
 {
-    Supplier AddSupplier(Guid id, string supplierName, string supplierEmail, string? supplierPhoneNumer);
+    Supplier AddSupplier(string supplierName, string supplierEmail, string? supplierPhoneNumer);
     IReadOnlyList<Supplier> GetAllSuppliers();
 }
