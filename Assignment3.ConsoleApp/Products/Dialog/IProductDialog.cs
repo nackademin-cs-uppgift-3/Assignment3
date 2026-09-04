@@ -1,5 +1,7 @@
 ﻿namespace Assignment3.ConsoleApp.Products.Dialog;
 
-internal interface IProductDialog
+public interface IProductDialog
 {
+    void AddProductDialog();
+    void ShowAllProductsDialog();
 }
