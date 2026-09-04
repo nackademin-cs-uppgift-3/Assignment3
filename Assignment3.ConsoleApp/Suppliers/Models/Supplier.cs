@@ -6,4 +6,5 @@ public class Supplier(Guid id, string supplierName, string supplierEmail, string
     public string SupplierName { get; set; } = supplierName;
     public string SupplierEmail { get; set; } = supplierEmail;
     public string? SupplierPhoneNumber { get; set; } = supplierPhoneNumer;
+
 }
