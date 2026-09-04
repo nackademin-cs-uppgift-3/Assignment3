@@ -59,6 +59,18 @@ internal class SupplierDialogService(ISupplierService supplierService) : ISuppli
 
     public void ShowAllSuppliersDialog()
     {
-        throw new NotImplementedException();
+        Console.WriteLine("SUPPLIER LIST");
+        Console.WriteLine();
+        
+        var suppliers = supplierService.GetAllSuppliers();
+
+        foreach (Supplier supplier in suppliers)
+        {
+            Console.WriteLine($"{supplier.SupplierName}\n" +
+                $"Email: {supplier.SupplierEmail}n" +
+                $"Phone number: {supplier.SupplierPhoneNumber}");
+
+            Console.WriteLine();
+        }
     }
 }
