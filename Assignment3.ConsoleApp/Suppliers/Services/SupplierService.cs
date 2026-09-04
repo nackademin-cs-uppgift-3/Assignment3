@@ -22,6 +22,8 @@ internal class SupplierService : ISupplierService
 
     public IReadOnlyList<Supplier> GetAllSuppliers()
     {
-        throw new NotImplementedException();
+        return _supplierList
+            .OrderBy(supplier => supplier.SupplierName)
+            .ToList();
     }
 }
